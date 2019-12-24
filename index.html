@@ -3,17 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Add React in One Minute</title>
+  <title>Simple Metronome</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 
-  <h2>Add React in One Minute</h2>
-  <p>This page demonstrates using React with no build tooling.</p>
-  <p>React is loaded as a script tag.</p>
-
   <!-- We will put our React component inside this div. -->
-  <div id="like_button_container"></div>
+  <!-- <div id="metronome_container"></div> -->
 
   <!-- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -21,8 +18,11 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
   <!-- Load our React component. -->
-  <script src="./components/like_button.js"></script>
-
+  <script src="./components/BPMValue.js" ></script>
+  <script src="./components/BPMRange.js" ></script>
+  <script src="./components/ActionButton.js" ></script>
+  <script type="module" src="./index.js" ></script>
+  
 </body>
 
 </html>

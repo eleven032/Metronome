@@ -3,12 +3,13 @@ import React from 'react';
 export default function ActionButton() {
   const [playing, togglePlaying] = React.useState(false);
 
-  return(
-    <button 
+  return (
+    <button
+      type="submit"
       className="bpmButton"
-      onClick={ () => togglePlaying(!playing)} 
+      onClick={() => togglePlaying(!playing)}
     >
-      <text> {playing ? 'Stop': 'Start'} </text>
+      {playing ? 'Stop' : 'Start'}
     </button>
   );
 }

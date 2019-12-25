@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BPMSlider Test should be a Slider tag 1`] = `
+<span
+  className="MuiSlider-root MuiSlider-colorPrimary"
+  onMouseDown={[Function]}
+>
+  <span
+    className="MuiSlider-rail"
+  />
+  <span
+    className="MuiSlider-track"
+    style={
+      Object {
+        "left": "0%",
+        "width": "11.11111111111111%",
+      }
+    }
+  />
+  <input
+    type="hidden"
+    value="80"
+  />
+  <span
+    aria-labelledby="discrete-slider-small-steps"
+    aria-orientation="horizontal"
+    aria-valuemax={240}
+    aria-valuemin={60}
+    aria-valuenow={80}
+    className="MuiSlider-thumb MuiSlider-thumbColorPrimary"
+    data-index={0}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    role="slider"
+    style={
+      Object {
+        "left": "11.11111111111111%",
+      }
+    }
+    tabIndex={0}
+  />
+</span>
+`;

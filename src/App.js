@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -26,5 +26,3 @@ and save to reload.
     </div>
   );
 }
-
-export default App;

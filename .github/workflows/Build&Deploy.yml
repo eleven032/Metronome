@@ -11,5 +11,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: 0f7fd97d453df1870a7b17471784a86284e7b022
-        BRANCH: gh-pages
+        BRANCH: workflow
         FOLDER: build

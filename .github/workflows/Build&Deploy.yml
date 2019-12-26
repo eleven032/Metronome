@@ -10,6 +10,6 @@ jobs:
     - name: Build and Deploy
       uses: eleven032/Metronome@releases/v3
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: be5d9bd37e236bab7d8ec7c129f5ce7b7846283e
         BRANCH: gh-pages
         FOLDER: build 

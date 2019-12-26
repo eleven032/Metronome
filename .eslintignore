@@ -1,7 +1,5 @@
 src/serviceWorker.js
 node_modules/*
 build/*
-static/*
-service-worker.js
-precache-manifest.e28d2aa1ac5a460dab6f47c97186c730.js
+
 

@@ -1,15 +1,2 @@
-name: Build and Deploy
-on: [push]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-
-    - name: Build and Deploy
-      uses: eleven032/Metronome
-      with:
-        ACCESS_TOKEN: be5d9bd37e236bab7d8ec7c129f5ce7b7846283e
-        BRANCH: gh-pages
-        FOLDER: build 
+- name: Deploy to GitHub Pages
+  uses: JamesIves/github-pages-deploy-action@3.1.1

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function BPMValue({ value }) {
   return (
     <h2 className="bpmValue">
-      {`${value || 80} BPM`}
+      {`${value} BPM`}
     </h2>
   );
 }

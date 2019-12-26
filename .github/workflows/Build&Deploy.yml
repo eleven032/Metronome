@@ -13,4 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: workflow
         FOLDER: build
+        TARGET_FOLDER: deploy
         BUILD_SCRIPT: npm run deploy

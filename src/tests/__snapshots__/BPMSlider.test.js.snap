@@ -13,20 +13,20 @@ exports[`BPMSlider Test should be a Slider tag 1`] = `
     style={
       Object {
         "left": "0%",
-        "width": "11.11111111111111%",
+        "width": "NaN%",
       }
     }
   />
   <input
     type="hidden"
-    value="80"
+    value="NaN"
   />
   <span
     aria-labelledby="discrete-slider-small-steps"
     aria-orientation="horizontal"
     aria-valuemax={240}
     aria-valuemin={60}
-    aria-valuenow={80}
+    aria-valuenow={NaN}
     className="MuiSlider-thumb MuiSlider-thumbColorPrimary"
     data-index={0}
     onBlur={[Function]}
@@ -37,7 +37,7 @@ exports[`BPMSlider Test should be a Slider tag 1`] = `
     role="slider"
     style={
       Object {
-        "left": "11.11111111111111%",
+        "left": "NaN%",
       }
     }
     tabIndex={0}

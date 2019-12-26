@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Build and Deploy
-      uses: eleven032/Metronome@releases/v3
+      uses: eleven032/Metronome
       with:
         ACCESS_TOKEN: be5d9bd37e236bab7d8ec7c129f5ce7b7846283e
         BRANCH: gh-pages

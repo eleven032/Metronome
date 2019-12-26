@@ -10,6 +10,7 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: 0f7fd97d453df1870a7b17471784a86284e7b022
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: workflow
         FOLDER: build
+        BUILD_SCRIPT: npm run build && npm run deploy

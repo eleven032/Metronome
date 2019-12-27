@@ -1,5 +1,8 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -7,9 +10,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Build and Deploy
+    - name: Build
+      run: |
+        npm install
+        npm run-script build
+
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: 0f7fd97d453df1870a7b17471784a86284e7b022
-        BRANCH: workflow
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
         FOLDER: build

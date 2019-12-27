@@ -1,2 +1,5 @@
 src/serviceWorker.js
 node_modules/*
+build/*
+
+

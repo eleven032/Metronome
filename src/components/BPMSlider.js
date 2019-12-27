@@ -11,7 +11,10 @@ export default function BPMSlider({ value, setBPM }) {
       step={5}
       min={60}
       max={240}
-      onChange={(_, sliderValue) => { setBPM(sliderValue); }}
+      onChange={(_, sliderValue) => {
+        setBPM(sliderValue);
+        localStorage.setItem('bpm', sliderValue);
+      }}
     />
   );
 }

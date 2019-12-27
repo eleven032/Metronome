@@ -5,7 +5,8 @@ import BPMSlider from './components/BPMSlider';
 import ActionButton from './components/ActionButton';
 
 export default function App() {
-  const [bpm, setBPM] = React.useState(80);
+  const [bpm, setBPM] = React.useState(localStorage.getItem('bpm') || 80);
+
 
   return (
     <div className="App">

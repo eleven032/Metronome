@@ -3,6 +3,7 @@ import Slider from '@material-ui/core/Slider';
 import PropTypes from 'prop-types';
 
 export default function BPMSlider({ value, setBPM }) {
+  localStorage.setItem('bpm', value);
   return (
     <Slider
       track="normal"

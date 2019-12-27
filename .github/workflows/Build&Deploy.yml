@@ -1,20 +1,23 @@
 name: Build and Deploy
-on: 
+on:
   push:
     branches:
       - workflow
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v1
 
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
+    - name: Build
+      run: |
+        npm install
+        npm run-script build
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build

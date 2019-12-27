@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/extensions
 import Slider from '@material-ui/core/Slider';
 import PropTypes from 'prop-types';
 

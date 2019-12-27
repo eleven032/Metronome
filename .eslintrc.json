@@ -28,7 +28,8 @@
       "func-names": "off",
       "class-methods-use-this": "off",
       "no-alert": "off",
-      "radix": "off"
+      "radix": "off",
+      "linebreak-style": 0
     },
     "root": true
 }

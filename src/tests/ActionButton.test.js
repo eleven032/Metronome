@@ -4,7 +4,8 @@ import ActionButton from '../components/ActionButton';
 
 describe('ActionButton Test', () => {
   test('should be a button tag', () => {
-    const component = create(<ActionButton />);
+    const bpm = 90;
+    const component = create(<ActionButton value={bpm} />);
     const instance = component.root;
     const button = instance.findByType('button');
     expect(button.props.children).toBe('Start');
